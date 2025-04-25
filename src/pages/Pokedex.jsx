@@ -160,10 +160,10 @@ function Podekex() {
       </a>
       <div id="poke_grid">
         {pokedexEntries.map((entry) => (
-          <a href={"./pokemon/" + entry.name}>
-            <div key={entry.id}>
+          <a href={"./pokemon/" + entry.name} key={entry.id}>
+            <div>
               <p id="id">{entry.id}</p>
-              <div id="type" key={entry.number}>
+              <div id="type">
                 {entry.types.map((type) => (
                   <img src={getTypeImageUrl(type)} key={entry.id + type} />
                 ))}

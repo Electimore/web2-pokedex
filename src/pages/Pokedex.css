@@ -22,6 +22,14 @@ h1 {
   font-style: italic;
 }
 
+#about_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
+}
+
 #poke_grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -151,4 +159,66 @@ button:hover {
 
 #loading > img {
   height: 100%;
+}
+
+#pokemonInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#typeInfo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 20px;
+  top: 20px;
+  margin: 0;
+}
+
+#typeInfo > img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+#pokemonInfoImgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#pokemonInfoImgs > div > img {
+  height: 250px;
+  width: auto;
+  margin: 0px 30px 25px 30px;
+}
+
+#pokemonInfo > h1 {
+  text-transform: capitalize;
+}
+
+.return {
+  color: black;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  margin: 0;
+  font-size: 20px;
+}
+
+thead {
+  font-weight: bold;
+}
+
+td {
+  padding-right: 8px;
+  padding-left: 8px;
+  width: 100px;
+}
+table {
+  margin-bottom: 20px;
 }
