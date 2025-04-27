@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     historyApiFallback: true,
   },
-  base: "/web2-pokedex/",
+  base: "/web2-pokedex",
 });
