@@ -156,7 +156,7 @@ function Podekex() {
   return (
     <>
       <h1>POKEDEX</h1>
-      <Link to="./about" id="about">
+      <Link to="/about" id="about">
         About
       </Link>
       <div id="poke_grid">

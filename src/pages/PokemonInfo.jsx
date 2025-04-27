@@ -141,7 +141,9 @@ function PokemonInfo() {
 
   return (
     <div id="pokemonInfo">
-      <h1>{pokemonData.name}</h1>
+      <h1>
+        #{pokemonData.id} | {pokemonData.name}
+      </h1>
       <Link className="return" to="/">
         &laquo; Return
       </Link>
@@ -187,7 +189,7 @@ function PokemonInfo() {
 
       <h2>Abilities: </h2>
       {pokemonData.abilities.map((ability) => (
-        <div key={ability.ability.name}>
+        <div className="pokemon_ability" key={ability.ability.name}>
           <h3>{ability.ability.name}</h3>
           <p>
             {abilityDescriptions[ability.ability.name] ||

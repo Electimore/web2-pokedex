@@ -211,6 +211,10 @@ button:hover {
   font-size: 20px;
 }
 
+.pokemon_ability {
+  max-width: 50%;
+}
+
 thead {
   font-weight: bold;
 }
