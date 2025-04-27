@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <h1>About</h1>
-      <Link className="return" to="../">
+      <Link className="return" to="/">
         &laquo; Return
       </Link>
       <div id="about_page">
@@ -13,7 +13,7 @@ function About() {
         <p>Made by: Aleksander Daniel Gwóźdź and Karolina Anna Krysiak</p>
         <br />
         <p>
-          Nothing to see here. <Link to="../">Return to Pokedex.</Link>
+          Nothing to see here. <Link to="/">Return to Pokedex.</Link>
         </p>
       </div>
     </>

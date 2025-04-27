@@ -143,10 +143,7 @@ function Podekex() {
       <>
         <h1>Loading Pokemon data...</h1>
         <div id="loading">
-          <img
-            id="loading-img"
-            src="https://github.com/Electimore/web2-pokedex/blob/main/public/loading-no-bg.gif?raw=true"
-          />
+          <img id="loading-img" src="loading-no-bg.gif" />
         </div>
       </>
     );
@@ -164,7 +161,7 @@ function Podekex() {
       </Link>
       <div id="poke_grid">
         {pokedexEntries.map((entry) => (
-          <Link to={"./pokemon/" + entry.name} key={entry.id}>
+          <Link to={"/pokemon/" + entry.name} key={entry.id}>
             <div>
               <p id="id">{entry.id}</p>
               <div id="type">
