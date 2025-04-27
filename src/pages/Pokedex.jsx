@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Pokedex.css";
+import { Link } from "react-router-dom";
 
 const getPokemonPage = async (page = 0, elementsPerPage = 20) => {
   let offset = page * elementsPerPage;
@@ -142,7 +143,10 @@ function Podekex() {
       <>
         <h1>Loading Pokemon data...</h1>
         <div id="loading">
-          <img id="loading-img" src="../../public/loading-no-bg.gif" />
+          <img
+            id="loading-img"
+            src="https://github.com/Electimore/web2-pokedex/blob/main/public/loading-no-bg.gif?raw=true"
+          />
         </div>
       </>
     );
@@ -155,12 +159,12 @@ function Podekex() {
   return (
     <>
       <h1>POKEDEX</h1>
-      <a href="./about" id="about">
+      <Link to="./about" id="about">
         About
-      </a>
+      </Link>
       <div id="poke_grid">
         {pokedexEntries.map((entry) => (
-          <a href={"./pokemon/" + entry.name} key={entry.id}>
+          <Link to={"./pokemon/" + entry.name} key={entry.id}>
             <div>
               <p id="id">{entry.id}</p>
               <div id="type">
@@ -172,7 +176,7 @@ function Podekex() {
               <img id="poke_img" src={entry.sprite}></img>
               <p id="name">{entry.name}</p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
 

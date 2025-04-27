@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const getPokemon = async (name) => {
   if (name === "") {
@@ -129,7 +129,10 @@ function PokemonInfo() {
       <>
         <h1>Loading Pokemon data...</h1>
         <div id="loading">
-          <img id="loading-img" src="../../public/loading-no-bg.gif" />
+          <img
+            id="loading-img"
+            src="https://github.com/Electimore/web2-pokedex/blob/main/public/loading-no-bg.gif"
+          />
         </div>
       </>
     );
@@ -142,9 +145,9 @@ function PokemonInfo() {
   return (
     <div id="pokemonInfo">
       <h1>{pokemonData.name}</h1>
-      <a className="return" href="../">
+      <Link className="return" to="../">
         &laquo; Return
-      </a>
+      </Link>
       <div id="typeInfo">
         {pokemonData.types.map((type) => (
           <img src={getTypeImageUrl(type.type.name)} key={type.type.name} />
