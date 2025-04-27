@@ -131,7 +131,7 @@ function PokemonInfo() {
         <div id="loading">
           <img
             id="loading-img"
-            src="https://github.com/Electimore/web2-pokedex/blob/main/public/loading-no-bg.gif"
+            src="https://github.com/Electimore/web2-pokedex/blob/main/public/loading-no-bg.gif?raw=true"
           />
         </div>
       </>
